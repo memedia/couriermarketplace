@@ -1,0 +1,14 @@
+on:
+  rss:
+    url: https://www.instapaper.com/rss/7852146/1XdK2Pf66PNeq9bbBhksjh5FFLk
+jobs:
+  add-tack:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add Dida365 Task Action
+        uses: ahonn/add-dida365-task-action@v0.1.0
+        with:
+          emailOrPhone: {{ secrets.DIDA365_EMAIL }}
+          password: {{ secrets.DIDA365_PASSWORD }}
+          task: '${{ on.rss.outputs.title }} ${{ on.rss.outputs.link }}'
+
