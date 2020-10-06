@@ -1,6 +1,6 @@
 on:
   rss:
-    url: https://hnrss.org/newest?points=300&count=3
+    url: https://www.instapaper.com/rss/7852146/1XdK2Pf66PNeq9bbBhksjh5FFLk
 jobs:
   print:
     name: Print
