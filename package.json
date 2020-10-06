@@ -26,5 +26,7 @@
   "bugs": {
     "url": "https://github.com/actionsflow/actionsflow-workflow-default/issues"
   },
-  "dependencies": {}
+  "dependencies": {
+    "puppeteer": "^5.3.1"
+  }
 }
