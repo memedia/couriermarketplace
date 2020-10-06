@@ -8,6 +8,7 @@ on:
 jobs:
   run:
     runs-on: ubuntu-latest
+    container: buildkite/puppeteer
     name: Run
     steps:
       - uses: actions/checkout@v2
