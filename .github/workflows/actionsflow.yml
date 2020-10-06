@@ -11,11 +11,6 @@ jobs:
     name: Run
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js 12.x
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12.x
-      - run: npm install puppeteer -g
       - name: Run Actionsflow
         uses: actionsflow/actionsflow-action@v1
         with:

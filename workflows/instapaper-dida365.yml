@@ -6,7 +6,7 @@ jobs:
     name: Add new task
     runs-on: ubuntu-latest
     steps:
-      - uses: ahonn/add-dida365-task-action@v0.1.0
+      - uses: ahonn/add-dida365-task-action@v0.2.0
         with:
           emailOrPhone: ${{ secrets.DIDA365_EMAIL }}
           password: ${{ secrets.DIDA365_PASSWORD }}
