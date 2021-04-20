@@ -1,3 +1,4 @@
 on:
-  webhook:
+  webhook:  https://webhook.actionsflow.workers.dev/memedia/couriermarketplace/webhook/webhook?__token=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
     method: post
+    Content Type: application/json
