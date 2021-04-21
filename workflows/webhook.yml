@@ -11,3 +11,10 @@ jobs:
           outputs: ${{ toJSON(on.webhook.outputs) }}
         run: |
           echo outputs: $outputs
+      - name: create-json
+          id: create-json
+          uses: jsdaniell/create-json@1.1.2
+          with:
+            name: "4757.json"
+            json: '{"name":"jsdaniell", "password":"mypass"}'
+            dir: 'src/'
