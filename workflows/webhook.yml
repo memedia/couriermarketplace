@@ -8,6 +8,6 @@ jobs:
     steps:
       - name: Print Outputs
         env:
-          outputs: ${{ toJSON(on.rss.outputs) }}
+          outputs: ${{ toJSON(on.webhook.outputs) }}
         run: |
           echo outputs: $outputs
