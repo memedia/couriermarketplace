@@ -1,7 +1,7 @@
 on:
   webhook:  
     method: post
- jobs:
+jobs:
   print:
     name: Print
     runs-on: ubuntu-latest
