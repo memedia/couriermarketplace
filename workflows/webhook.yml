@@ -1,4 +1,13 @@
 on:
   webhook:  
     method: post
-
+ jobs:
+  print:
+    name: Print
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Outputs
+        env:
+          outputs: ${{ toJSON(on.rss.outputs) }}
+        run: |
+          echo outputs: $outputs
