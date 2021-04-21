@@ -17,4 +17,4 @@ jobs:
         with:
           name: "driver.json"
           json: '{"name":"jsdaniell", "password":"mypass"}'
-          dir: 'src/'
+          dir: 'couriermarketplace/src/'
