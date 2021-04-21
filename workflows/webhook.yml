@@ -15,6 +15,6 @@ jobs:
         id: create-json
         uses: jsdaniell/create-json@1.1.2
         with:
-          name: "4757.json"
+          name: "driver.json"
           json: '{"name":"jsdaniell", "password":"mypass"}'
           dir: 'src/'
