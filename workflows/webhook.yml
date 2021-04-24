@@ -1,8 +1,7 @@
 on:
   webhook:  
     method: post
-jobs:
-      - name: create-json
+    name: create-json
         id: create-json
         uses: DamianReeves/write-file-action
         with:
