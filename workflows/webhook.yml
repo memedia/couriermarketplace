@@ -6,11 +6,6 @@ jobs:
     name: Print
     runs-on: ubuntu-latest
     steps:
-      - name: Print Outputs
-        env:
-          outputs: ${{ toJSON(on.webhook.outputs) }}
-        run: |
-          echo outputs: $outputs
       - name: create-json
         id: create-json
         uses: DamianReeves/write-file-action
