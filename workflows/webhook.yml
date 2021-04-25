@@ -1,11 +1,12 @@
 on:
   webhook:  
     method: post
-    name: create-json
-    id: create-json
-    uses: DamianReeves/write-file-action
-    with:
-      path: ${{ env.home}}/driver.json
-      contents: |
-        echo "Hello World!"
-      write-mode: append
+jobs:
+      - name: create-json
+        id: create-json
+        uses: DamianReeves/write-file-action
+        with:
+          path: ${{ env.home}}/driver.json
+          contents: |
+            echo "Hello World!"
+          write-mode: append
