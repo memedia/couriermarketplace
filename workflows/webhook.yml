@@ -2,11 +2,9 @@ on:
   webhook:  
     method: post
 jobs:
-      - name: create-json
-        id: create-json
-        uses: DamianReeves/write-file-action
-        with:
-          path: ${{ env.home}}/driver.json
-          contents: |
-            echo "Hello World!"
-          write-mode: append
+    - name: create-json
+      id: create-json
+      uses: jsdaniell/create-json@1.1.2
+      with:
+        name: "new-json-file.json"
+        json: '{"name":"jsdaniell", "password":"mypass"}'
