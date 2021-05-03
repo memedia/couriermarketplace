@@ -8,16 +8,16 @@ jobs:
       with:
         name: "new-json-file.json"
         json: '{"name":"jsdaniell", "password":"mypass"}'
-  outputs:
-    name: outputs
-    runs-on: ubuntu-latest
-    steps:
-      - name: Get outputs
-        uses: actions/github-script@v2
-        env:
-          OUTPUTS_PATH: ${{ on.webhook.outputs.path }}
-        with:
-          script: |
-            const outputs = require(`${process.env.GITHUB_WORKSPACE}/${process.env.OUTPUTS_PATH}`)
-            console.log('outputs',outputs)
-            return true
+    outputs:
+      name: outputs
+      runs-on: ubuntu-latest
+      steps:
+        - name: Get outputs
+          uses: actions/github-script@v2
+          env:
+            OUTPUTS_PATH: ${{ on.webhook.outputs.path }}
+          with:
+            script: |
+              const outputs = require(`${process.env.GITHUB_WORKSPACE}/${process.env.OUTPUTS_PATH}`)
+              console.log('outputs',outputs)
+              return true
